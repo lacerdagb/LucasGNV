@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas GNV - Instalação de Gás Natural em Nova Iguaçu</title>
+    <meta name="description" content="Economize até 60% no combustível! Instalação de Kit GNV em Nova Iguaçu com segurança e qualidade. Peça seu orçamento online para a Lucas GNV.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #f3b70d; /* Dourado/Amarelo da logo */
+            --secondary-color: #1a1a1a; /* Preto */
+            --text-color: #333;
+            --background-color: #fdfaf5; /* Um branco levemente amarelado */
+            --white-color: #ffffff;
+            --heading-font: 'Montserrat', sans-serif;
+            --body-font: 'Roboto', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--body-font); line-height: 1.6; color: var(--text-color); background-color: var(--background-color); }
+        .container { max-width: 1100px; margin: auto; overflow: hidden; padding: 0 20px; }
+        section { padding: 60px 0; }
+
+        h1, h2, h3, h4 { font-family: var(--heading-font); color: var(--secondary-color); font-weight: 700; }
+        h2 { font-size: 2.8rem; text-align: center; margin-bottom: 10px; }
+        h2 span { color: var(--primary-color); }
+        .section-subtitle { text-align: center; font-size: 1.1rem; color: #666; max-width: 600px; margin: 0 auto 40px auto; }
+        
+        /* --- Header --- */
+        header { background: var(--white-color); padding: 1rem 0; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        header img.logo { max-width: 150px; height: auto; }
+
+        /* --- Hero Section --- */
+        .hero { 
+            /* CORREÇÃO APLICADA AQUI: Usando fundo1.jpg na seção hero */
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('fundo1.jpg') no-repeat center center/cover; 
+            color: var(--white-color); 
+            padding: 100px 0; 
+            text-align: center; 
+        }
+        .hero h1 { font-size: 3.5rem; font-weight: 800; color: var(--white-color); margin-bottom: 15px; }
+        .hero p { font-size: 1.4rem; max-width: 700px; margin: 0 auto 30px auto; }
+        
+        /* --- Botão CTA --- */
+        .cta-button { display: inline-block; background: var(--primary-color); color: var(--secondary-color); padding: 18px 40px; text-decoration: none; font-weight: 700; font-size: 1.2rem; font-family: var(--heading-font); border-radius: 5px; border: none; cursor: pointer; text-align: center; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(243, 183, 13, 0.4); }
+        .cta-button:hover { background-color: #dab51b; transform: translateY(-3px); }
+        .cta-button.whatsapp { background-color: #25d366; color: var(--white-color); box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); }
+        .cta-button.whatsapp:hover { background-color: #1ea74d; }
+        .cta-button.whatsapp i { margin-right: 10px; }
+
+        /* --- Seção de Vantagens --- */
+        .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .benefit-card { background: var(--white-color); padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.06); text-align: left; }
+        .benefit-card .icon { font-size: 2.5rem; color: var(--primary-color); margin-bottom: 15px; }
+        .benefit-card h3 { font-size: 1.5rem; margin-bottom: 10px; }
+        
+        /* --- Seção de Kits (Planos) --- */
+        .kits-grid { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; align-items: center; }
+        .kit-card { background: var(--white-color); padding: 30px; border-radius: 10px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); width: 340px; border: 2px solid #eee; position: relative; }
+        .kit-card.popular { border: 2px solid var(--primary-color); transform: scale(1.05); }
+        .popular-badge { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--primary-color); color: var(--secondary-color); padding: 5px 20px; border-radius: 20px; font-weight: 700; font-size: 0.9rem; font-family: var(--heading-font); }
+        .kit-card h3 { font-size: 2rem; text-align: center; }
+        .kit-card .subtitle { text-align: center; margin-bottom: 20px; }
+        .kit-card ul { list-style: none; margin: 20px 0; }
+        .kit-card ul li { margin-bottom: 12px; font-size: 1rem; }
+        .kit-card ul li i { color: #27ae60; margin-right: 10px; }
+        .kit-card .cta-button { width: 100%; }
+
+        /* --- Seção Economia --- */
+        .economy-main-section {
+            /* ALTERAÇÃO FEITA AQUI: Troquei a URL pela sua imagem local */
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('fundo-economia.jpg') no-repeat center center/cover;
+            color: var(--white-color);
+            padding: 80px 0;
+            text-align: center;
+        }
+        .economy-main-section h2, .economy-main-section .section-subtitle { color: var(--white-color); }
+        .economy-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 50px; }
+        .economy-card { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(5px); padding: 30px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.2); }
+        .economy-card .icon { font-size: 3rem; color: var(--primary-color); margin-bottom: 15px; }
+        .economy-card h3 { font-size: 1.8rem; color: var(--white-color); margin-bottom: 10px; }
+        .economy-card p { color: #ddd; }
+        .economy-simulator { background: linear-gradient(135deg, #27ae60, #2ecc71); color: #fff; padding: 20px; border-radius: 8px; margin-top: 40px; text-align: center; max-width: 400px; margin-left: auto; margin-right: auto;}
+        .economy-simulator h4 { color: #fff; font-size: 1.3rem; }
+        .economy-simulator .value { font-size: 2.5rem; font-weight: 800; font-family: var(--heading-font); }
+
+        /* --- Seção Depoimentos --- */
+        .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .testimonial-card { background: var(--white-color); padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.06); position: relative; }
+        .testimonial-card .quote-icon { position: absolute; top: 15px; right: 20px; font-size: 3rem; color: #f0f0f0; z-index: 1; }
+        .testimonial-card .stars { color: #f1c40f; margin-bottom: 10px; }
+        .testimonial-card h4 { font-size: 1.1rem; color: var(--primary-color); margin-bottom: 10px; }
+        .testimonial-card .author-info { display: flex; align-items: center; gap: 15px; margin-top: 20px; }
+        .author-initials { width: 50px; height: 50px; background: var(--primary-color); color: var(--secondary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700; font-family: var(--heading-font); }
+        .author-details .name { font-weight: 700; }
+
+        /* --- Seção Contato/CTA final --- */
+        #contact { background: var(--secondary-color); text-align: center; padding: 80px 0; }
+        #contact h2 { color: var(--white-color); font-size: 3rem; margin-bottom: 20px; }
+        #contact .section-subtitle { color: #ddd; margin-bottom: 50px; font-size: 1.2rem; }
+        
+        /* --- Footer --- */
+        footer { text-align: center; padding: 20px 0; border-top: 1px solid #eee; background-color: #1a1a1a; color: #aaa; }
+        
+        /* --- Responsividade --- */
+        @media (max-width: 768px) {
+            h2 { font-size: 2.2rem; }
+            .hero h1 { font-size: 2.5rem; }
+            .kit-card.popular { transform: scale(1); }
+            .economy-grid { grid-template-columns: 1fr; }
+            #contact h2 { font-size: 2.5rem; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="logo.jpg" alt="Logo Lucas GNV" class="logo">
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Economize até 60% com Combustível</h1>
+                <p>Instale seu Kit GNV com os especialistas de Nova Iguaçu e rode muito mais, gastando menos. Segurança e qualidade garantidas!</p>
+                <a href="#contact" class="cta-button">FAÇA UM ORÇAMENTO GRÁTIS</a>
+            </div>
+        </section>
+
+        <section id="benefits">
+            <div class="container">
+                <h2>Por que instalar GNV na <span>Lucas GNV?</span></h2>
+                <p class="section-subtitle">Descubra todas as vantagens de converter seu carro e ter mais economia no dia a dia.</p>
+                <div class="benefits-grid">
+                    <div class="benefit-card"> <div class="icon"><i class="fa-solid fa-sack-dollar"></i></div> <h3>Economia Imediata</h3> <p>O GNV custa em média 50-60% menos que a gasolina e o etanol, gerando uma economia real no seu bolso todo mês.</p> </div>
+                    <div class="benefit-card"> <div class="icon"><i class="fa-solid fa-shield-halved"></i></div> <h3>Segurança Garantida</h3> <p>Trabalhamos com equipamentos de ponta, instalação por técnicos certificados e seguimos todas as normas do INMETRO.</p> </div>
+                    <div class="benefit-card"> <div class="icon"><i class="fa-solid fa-screwdriver-wrench"></i></div> <h3>Instalação Especializada</h3> <p>Equipe qualificada para instalar o kit ideal para seu carro, garantindo performance e segurança.</p> </div>
+                    <div class="benefit-card"> <div class="icon"><i class="fa-solid fa-car"></i></div> <h3>Valorização do Veículo</h3> <p>Um carro com GNV instalado e regularizado é um diferencial de mercado e pode valorizar na hora da venda.</p> </div>
+                    <div class="benefit-card"> <div class="icon"><i class="fa-solid fa-leaf"></i></div> <h3>Menos Poluente</h3> <p>O GNV emite menos poluentes que combustíveis líquidos, ajudando o meio ambiente e a qualidade do ar.</p> </div>
+                    <div class="benefit-card"> <div class="icon"><i class="fa-solid fa-map-marker-alt"></i></div> <h3>Atendimento em Nova Iguaçu</h3> <p>Estamos perto de você para oferecer o melhor serviço, suporte e manutenção que seu carro precisa.</p> </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kits">
+            <div class="container">
+                <h2>Kits que <span>Cabem no seu Bolso</span></h2>
+                <p class="section-subtitle">Escolha o plano ideal para você. Sem pegadinhas, sem letras miúdas!</p>
+                <div class="kits-grid">
+                    <div class="kit-card">
+                        <h3>Kit 3ª Geração</h3>
+                        <p class="subtitle">Ideal para carros mais antigos</p>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Recomendado para carros carburados</li>
+                            <li><i class="fa-solid fa-check"></i> Ótimo custo-benefício</li>
+                            <li><i class="fa-solid fa-check"></i> Manutenção simples</li>
+                            <li><i class="fa-solid fa-check"></i> Garantia de 1 ano</li>
+                        </ul>
+                        <a href="#contact" class="cta-button">Consultar Preço</a>
+                    </div>
+                    <div class="kit-card popular">
+                        <div class="popular-badge">MAIS POPULAR</div>
+                        <h3>Kit 5ª Geração</h3>
+                        <p class="subtitle">A tecnologia ideal para seu carro novo</p>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Injeção eletrônica de gás</li>
+                            <li><i class="fa-solid fa-check"></i> Melhor custo-benefício e performance</li>
+                            <li><i class="fa-solid fa-check"></i> Totalmente automatizado</li>
+                            <li><i class="fa-solid fa-check"></i> Homologação INMETRO inclusa</li>
+                            <li><i class="fa-solid fa-check"></i> Garantia de 2 anos</li>
+                        </ul>
+                        <a href="#contact" class="cta-button">Consultar Preço</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="economy-main-section">
+            <div class="container">
+                <h2>Veja o quanto você pode <span>economizar de verdade</span></h2>
+                <p class="section-subtitle">O investimento no GNV se paga rapidamente. Com a Lucas GNV, você roda mais e gasta muito menos!</p>
+                <div class="economy-grid">
+                    <div class="economy-card">
+                        <div class="icon"><i class="fa-solid fa-car-side"></i></div>
+                        <h3>Mais Autonomia</h3>
+                        <p>Aumente a distância que você pode percorrer sem precisar reabastecer, ideal para o dia a dia e viagens.</p>
+                    </div>
+                    <div class="economy-card">
+                        <div class="icon"><i class="fa-solid fa-wallet"></i></div>
+                        <h3>Lucro para Motoristas</h3>
+                        <p>Se você trabalha com aplicativos, a economia no combustível se transforma diretamente em mais dinheiro no seu bolso.</p>
+                    </div>
+                    <div class="economy-card">
+                        <div class="icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                        <h3>Investimento Inteligente</h3>
+                        <p>O custo da instalação é rapidamente recuperado pela economia mensal, tornando-se um excelente investimento a longo prazo.</p>
+                    </div>
+                </div>
+                <div class="economy-simulator">
+                    <h4>Sua Economia Média Mensal Pode Chegar a:</h4>
+                    <div class="value">R$ 500 - R$ 1.500</div>
+                    <span>*Valor simulado para uso diário intenso, pode variar.</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <h2>Quem <span>Instala</span>, Recomenda</h2>
+                <p class="section-subtitle">Veja o que nossos clientes de Nova Iguaçu dizem sobre a experiência com a Lucas GNV.</p>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-quote-right quote-icon"></i>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <h4>Minha renda aumentou!</h4>
+                        <p>"Sou motorista de app e a gasolina estava comendo meu lucro. Depois que instalei o kit 5ª geração na Lucas GNV, minha economia foi absurda. O serviço foi rápido e o atendimento 10!"</p>
+                        <div class="author-info">
+                            <div class="author-initials">CS</div>
+                            <div class="author-details"><span class="name">Carlos Silva</span><br>Motorista de App</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-quote-right quote-icon"></i>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <h4>Serviço de confiança</h4>
+                        <p>"Tinha medo de instalar GNV, mas a equipe da Lucas GNV me passou muita segurança. Explicaram tudo, o carro ficou perfeito, sem perder potência. Agora viajo com a família sem me preocupar."</p>
+                        <div class="author-info">
+                            <div class="author-initials">AB</div>
+                            <div class="author-details"><span class="name">Ana Beatriz</span><br>Cliente</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-quote-right quote-icon"></i>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <h4>Instalação no mesmo dia</h4>
+                        <p>"Preciso do carro para trabalhar e não podia ficar parado. Agendei com eles e a instalação foi super rápida, peguei o carro no final do dia já pronto e regularizado. Recomendo demais!"</p>
+                        <div class="author-info">
+                            <div class="author-initials">RA</div>
+                            <div class="author-details"><span class="name">Roberto Almeida</span><br>Vendedor</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Não perca mais tempo e dinheiro! <span>Fale Conosco agora!</span></h2>
+                <p class="section-subtitle">A Lucas GNV está pronta para tirar suas dúvidas e te oferecer a melhor solução em GNV de Nova Iguaçu. Clique no botão e converse com um especialista!</p>
+                <a href="https://wa.me/5521999999999?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20instalação%20de%20GNV." target="_blank" class="cta-button whatsapp">
+                    <i class="fab fa-whatsapp"></i> CONVERSAR PELO WHATSAPP
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Lucas GNV - Todos os direitos reservados. Foco total em Nova Iguaçu-RJ.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
