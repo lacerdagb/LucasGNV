@@ -39,7 +39,6 @@
 
         /* --- Hero Section --- */
         .hero { 
-            /* CORREÇÃO APLICADA AQUI: Usando fundo1.jpg na seção hero */
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('fundo1.jpg') no-repeat center center/cover; 
             color: var(--white-color); 
             padding: 100px 0; 
@@ -75,7 +74,6 @@
 
         /* --- Seção Economia --- */
         .economy-main-section {
-            /* ALTERAÇÃO FEITA AQUI: Troquei a URL pela sua imagem local */
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('fundo-economia.jpg') no-repeat center center/cover;
             color: var(--white-color);
             padding: 80px 0;
@@ -101,6 +99,46 @@
         .author-initials { width: 50px; height: 50px; background: var(--primary-color); color: var(--secondary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700; font-family: var(--heading-font); }
         .author-details .name { font-weight: 700; }
 
+        /* --- NOVA SEÇÃO DE LOCALIZAÇÃO --- */
+        #location {
+            background-color: var(--white-color);
+        }
+        .location-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        .location-info, .location-map {
+            flex: 1;
+        }
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+        .info-item i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-top: 5px;
+        }
+        .info-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+        .info-item a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+         .location-map iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+            border-radius: 10px;
+        }
+
+
         /* --- Seção Contato/CTA final --- */
         #contact { background: var(--secondary-color); text-align: center; padding: 80px 0; }
         #contact h2 { color: var(--white-color); font-size: 3rem; margin-bottom: 20px; }
@@ -115,6 +153,7 @@
             .hero h1 { font-size: 2.5rem; }
             .kit-card.popular { transform: scale(1); }
             .economy-grid { grid-template-columns: 1fr; }
+            .location-content { flex-direction: column; } /* Colunas empilhadas no mobile */
             #contact h2 { font-size: 2.5rem; }
         }
 
@@ -252,12 +291,46 @@
                 </div>
             </div>
         </section>
-
+        
+        <section id="location">
+            <div class="container">
+                <h2>Onde nos <span>Encontrar</span></h2>
+                <p class="section-subtitle">Faça-nos uma visita! Estamos de portas abertas para te atender e mostrar a melhor solução em GNV para seu veículo.</p>
+                <div class="location-content">
+                    <div class="location-info">
+                        <div class="info-item">
+                            <i class="fa-solid fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Nosso Endereço</h3>
+                                <p>R. Irineu Pedroso, 155 - Rodilândia, <br>Nova Iguaçu - RJ, 26083-150</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h3>Telefone e WhatsApp</h3>
+                                <a href="tel:21973661524">(21) 97366-1524</a>
+                            </div>
+                        </div>
+                         <div class="info-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <h3>Horário de Funcionamento</h3>
+                                <p>Segunda a Sexta: 08:00 - 18:00 <br>Sábado: 08:00 - 12:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="location-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.919793138352!2d-43.52841462386926!3d-22.76813353246342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x995b056123f2bb%3A0x673d317511479836!2sR.%20Irineu%20Pedroso%2C%20155%20-%20Rodil%C3%A2ndia%2C%20Nova%20Igua%C3%A7u%20-%20RJ%2C%2026083-150!5e0!3m2!1spt-BR!2sbr!4v1725921319087!5m2!1spt-BR!2sbr"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="contact">
             <div class="container">
                 <h2>Não perca mais tempo e dinheiro! <span>Fale Conosco agora!</span></h2>
                 <p class="section-subtitle">A Lucas GNV está pronta para tirar suas dúvidas e te oferecer a melhor solução em GNV de Nova Iguaçu. Clique no botão e converse com um especialista!</p>
-                <a href="https://wa.me/5521999999999?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20instalação%20de%20GNV." target="_blank" class="cta-button whatsapp">
+                <a href="https://wa.me/5521973661524?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20instalação%20de%20GNV." target="_blank" class="cta-button whatsapp">
                     <i class="fab fa-whatsapp"></i> CONVERSAR PELO WHATSAPP
                 </a>
             </div>
