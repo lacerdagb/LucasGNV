@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas GNV - Instalação de Gás Natural em Nova Iguaçu</title>
-    <meta name="description" content="Economize até 60% no combustível! Instalação de Kit GNV em Nova Iguaçu com segurança e qualidade. Peça seu orçamento online para a Lucas GNV.">
+    <title>Lucas GNV - Mecânica em Geral, Injeção Eletrônica e GNV em Nova Iguaçu</title>
+    <meta name="description" content="Soluções completas para seu carro! Mecânica em Geral, Injeção Eletrônica e Instalação de Kit GNV em Nova Iguaçu com segurança e qualidade.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,23 +61,21 @@
         .benefit-card h3 { font-size: 1.5rem; margin-bottom: 10px; }
         
         /* --- Seção de Kits (Planos) --- */
-        .kits-grid { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; align-items: center; }
-        .kit-card { background: var(--white-color); padding: 30px; border-radius: 10px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); width: 340px; border: 2px solid #eee; position: relative; }
+        .kits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; justify-content: center; }
+        .kit-card { background: var(--white-color); padding: 30px; border-radius: 10px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); width: 100%; max-width: 350px; margin: 0 auto; border: 2px solid #eee; position: relative; display: flex; flex-direction: column; }
+        .kit-card ul { list-style: none; margin: 20px 0; flex-grow: 1; }
         .kit-card.popular { border: 2px solid var(--primary-color); transform: scale(1.05); }
         .popular-badge { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--primary-color); color: var(--secondary-color); padding: 5px 20px; border-radius: 20px; font-weight: 700; font-size: 0.9rem; font-family: var(--heading-font); }
         .kit-card h3 { font-size: 2rem; text-align: center; }
         .kit-card .subtitle { text-align: center; margin-bottom: 20px; }
-        .kit-card ul { list-style: none; margin: 20px 0; }
         .kit-card ul li { margin-bottom: 12px; font-size: 1rem; }
         .kit-card ul li i { color: #27ae60; margin-right: 10px; }
-        .kit-card .cta-button { width: 100%; }
+        .kit-card .cta-button { width: 100%; margin-top: auto; }
 
         /* --- Seção Economia --- */
         .economy-main-section {
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('fundo-economia.jpg') no-repeat center center/cover;
-            color: var(--white-color);
-            padding: 80px 0;
-            text-align: center;
+            color: var(--white-color); padding: 80px 0; text-align: center;
         }
         .economy-main-section h2, .economy-main-section .section-subtitle { color: var(--white-color); }
         .economy-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 50px; }
@@ -122,6 +120,9 @@
         footer p { margin-bottom: 15px; }
         
         /* --- Responsividade --- */
+        @media (max-width: 1100px) {
+            .kit-card.popular { transform: scale(1.02); }
+        }
         @media (max-width: 768px) {
             h2 { font-size: 2.2rem; }
             .hero h1 { font-size: 2.5rem; }
@@ -137,29 +138,29 @@
 
     <header>
         <div class="container">
-            <img src="logo.jpg" alt="Logo Lucas GNV" class="logo">
+            <img src="logo.png" alt="Logo Lucas GNV" class="logo">
         </div>
     </header>
 
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Economize até 60% com Combustível</h1>
-                <p>Instale seu Kit GNV com os especialistas de Nova Iguaçu e rode muito mais, gastando menos. Segurança e qualidade garantidas!</p>
+                <h1>Soluções Completas para o seu Veículo</h1>
+                <p>Mecânica em Geral, Injeção Eletrônica e Instalação de GNV com os especialistas de Nova Iguaçu!</p>
                 <a href="#contact" class="cta-button">FAÇA UM ORÇAMENTO GRÁTIS</a>
             </div>
         </section>
 
         <section id="benefits">
             <div class="container">
-                <h2>Por que instalar GNV na <span>Lucas GNV?</span></h2>
-                <p class="section-subtitle">Descubra todas as vantagens de converter seu carro e ter mais economia no dia a dia.</p>
+                <h2>Por que escolher a <span>Lucas GNV?</span></h2>
+                <p class="section-subtitle">Descubra todas as vantagens de cuidar do seu carro com quem realmente entende do assunto.</p>
                 <div class="benefits-grid">
-                    <div class="benefit-card"> <div class="icon"><i class="fa-solid fa-sack-dollar"></i></div> <h3>Economia Imediata</h3> <p>O GNV custa em média 50-60% menos que a gasolina e o etanol, gerando uma economia real no seu bolso todo mês.</p> </div>
-                    <div class="benefit-card"> <div class="icon"><i class="fa-solid fa-shield-halved"></i></div> <h3>Segurança Garantida</h3> <p>Trabalhamos com equipamentos de ponta, instalação por técnicos certificados e seguimos todas as normas do INMETRO.</p> </div>
-                    <div class="benefit-card"> <div class="icon"><i class="fa-solid fa-screwdriver-wrench"></i></div> <h3>Instalação Especializada</h3> <p>Equipe qualificada para instalar o kit ideal para seu carro, garantindo performance e segurança.</p> </div>
-                    <div class="benefit-card"> <div class="icon"><i class="fa-solid fa-car"></i></div> <h3>Valorização do Veículo</h3> <p>Um carro com GNV instalado e regularizado é um diferencial de mercado e pode valorizar na hora da venda.</p> </div>
-                    <div class="benefit-card"> <div class="icon"><i class="fa-solid fa-leaf"></i></div> <h3>Menos Poluente</h3> <p>O GNV emite menos poluentes que combustíveis líquidos, ajudando o meio ambiente e a qualidade do ar.</p> </div>
+                    <div class="benefit-card"> <div class="icon"><i class="fa-solid fa-car-burst"></i></div> <h3>Serviço Completo</h3> <p>Agora somos um centro automotivo completo! Da mecânica geral à injeção eletrônica, cuidamos de tudo para você.</p> </div>
+                    <div class="benefit-card"> <div class="icon"><i class="fa-solid fa-shield-halved"></i></div> <h3>Segurança Garantida</h3> <p>Trabalhamos com equipamentos de ponta e técnicos certificados, seguindo todas as normas de segurança.</p> </div>
+                    <div class="benefit-card"> <div class="icon"><i class="fa-solid fa-sack-dollar"></i></div> <h3>Economia com GNV</h3> <p>Reduza em até 60% seus gastos com combustível instalando um Kit GNV de última geração conosco.</p> </div>
+                    <div class="benefit-card"> <div class="icon"><i class="fa-solid fa-screwdriver-wrench"></i></div> <h3>Instalação Especializada</h3> <p>Nossa equipe é altamente qualificada para instalar o kit ideal para seu carro, garantindo performance e segurança.</p> </div>
+                    <div class="benefit-card"> <div class="icon"><i class="fa-solid fa-car"></i></div> <h3>Valorização do Veículo</h3> <p>Um carro bem cuidado e com GNV regularizado é um diferencial de mercado e pode valorizar na hora da venda.</p> </div>
                     <div class="benefit-card"> <div class="icon"><i class="fa-solid fa-map-marker-alt"></i></div> <h3>Atendimento em Nova Iguaçu</h3> <p>Estamos perto de você para oferecer o melhor serviço, suporte e manutenção que seu carro precisa.</p> </div>
                 </div>
             </div>
@@ -167,8 +168,8 @@
 
         <section id="kits">
             <div class="container">
-                <h2>Kits que <span>Cabem no seu Bolso</span></h2>
-                <p class="section-subtitle">Escolha o plano ideal para você. Sem pegadinhas, sem letras miúdas!</p>
+                <h2>Kits GNV que <span>Cabem no seu Bolso</span></h2>
+                <p class="section-subtitle">Temos a tecnologia ideal para o seu carro e seu orçamento. Escolha o seu!</p>
                 <div class="kits-grid">
                     <div class="kit-card">
                         <h3>Kit 3ª Geração</h3>
@@ -177,20 +178,34 @@
                             <li><i class="fa-solid fa-check"></i> Recomendado para carros carburados</li>
                             <li><i class="fa-solid fa-check"></i> Ótimo custo-benefício</li>
                             <li><i class="fa-solid fa-check"></i> Manutenção simples</li>
-                            <li><i class="fa-solid fa-check"></i> Garantia de 1 ano</li>
+                            <li><i class="fa-solid fa-check"></i> Garantia de 6 meses</li>
                         </ul>
                         <a href="#contact" class="cta-button">Consultar Preço</a>
                     </div>
                     <div class="kit-card popular">
                         <div class="popular-badge">MAIS POPULAR</div>
                         <h3>Kit 5ª Geração</h3>
-                        <p class="subtitle">A tecnologia ideal para seu carro novo</p>
+                        <p class="subtitle">Tecnologia para carros modernos</p>
                         <ul>
+                            <li><i class="fa-solid fa-check"></i> Ótimo custo-benefício</li>
                             <li><i class="fa-solid fa-check"></i> Injeção eletrônica de gás</li>
                             <li><i class="fa-solid fa-check"></i> Melhor custo-benefício e performance</li>
                             <li><i class="fa-solid fa-check"></i> Totalmente automatizado</li>
-                            <li><i class="fa-solid fa-check"></i> Homologação INMETRO inclusa</li>
-                            <li><i class="fa-solid fa-check"></i> Garantia de 2 anos</li>
+                            <li><i class="fa-solid fa-check"></i> Garantia de 1 ano</li>
+
+                        </ul>
+                        <a href="#contact" class="cta-button">Consultar Preço</a>
+                    </div>
+                    <div class="kit-card">
+                        <h3>Kit 6ª Geração</h3>
+                        <p class="subtitle">Máxima performance e eficiência</p>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Injeção direta de combustível</li>
+                            <li><i class="fa-solid fa-check"></i> Perda de potência quase nula</li>
+                            <li><i class="fa-solid fa-check"></i> Ideal para motores turbo e mais novos</li>
+                            <li><i class="fa-solid fa-check"></i> A mais alta tecnologia em GNV</li>
+                            <li><i class="fa-solid fa-check"></i> Garantia de 1 ano</li>
+
                         </ul>
                         <a href="#contact" class="cta-button">Consultar Preço</a>
                     </div>
@@ -255,8 +270,8 @@
                     <div class="testimonial-card">
                         <i class="fa-solid fa-quote-right quote-icon"></i>
                         <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                        <h4>Instalação no mesmo dia</h4>
-                        <p>"Preciso do carro para trabalhar e não podia ficar parado. Agendei com eles e a instalação foi super rápida, peguei o carro no final do dia já pronto e regularizado. Recomendo demais!"</p>
+                        <h4>Instalação rápida</h4>
+                        <p>"Serviço rápido e eficiente! Eu dependo do carro para trabalhar e eles resolveram tudo muito rápido, desde o agendamento até a instalação e a regularização. Recomendo demais!"</p>
                         <div class="author-info">
                             <div class="author-initials">RA</div>
                             <div class="author-details"><span class="name">Roberto Almeida</span><br>Vendedor</div>
@@ -297,10 +312,7 @@
                             <i class="fab fa-instagram"></i>
                             <div>
                                 <h3>Siga-nos no Instagram</h3>
-                                <a href="https://www.instagram.com/lucas_gnv_oficial_/" class="instagram" target="_blank"> 
-                                    <p>
-                                        @lucas_gnv_oficial_
-                                    </p></a>
+                                <a href="https://www.instagram.com/lucas_gnv_oficial_/" class="instagram" target="_blank">@lucas_gnv_oficial_</a>
                             </div>
                         </div>
                     </div>
@@ -314,8 +326,8 @@
         <section id="contact">
             <div class="container">
                 <h2>Não perca mais tempo e dinheiro! <span>Fale Conosco agora!</span></h2>
-                <p class="section-subtitle">A Lucas GNV está pronta para tirar suas dúvidas e te oferecer a melhor solução em GNV de Nova Iguaçu. Clique no botão e converse com um especialista!</p>
-                <a href="https://wa.me/5521973661524?text=Ol%C3%A1!%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20instalar%20o%20kit%20GNV%20no%20meu%20carro." target="_blank" class="cta-button whatsapp">
+                <p class="section-subtitle">A Lucas GNV está pronta para tirar suas dúvidas e te oferecer a melhor solução para seu carro. Clique no botão e converse com um especialista!</p>
+                <a href="https://wa.me/5521973661524?text=Ol%C3%A1!%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" class="cta-button whatsapp">
                     <i class="fab fa-whatsapp"></i> CONVERSAR PELO WHATSAPP
                 </a>
             </div>
@@ -325,6 +337,11 @@
     <footer>
         <div class="container">
             <p>© 2025 Lucas GNV - Todos os direitos reservados. Foco total em Nova Iguaçu-RJ.</p>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/lucas_gnv_oficial_/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
         </div>
     </footer>
 
